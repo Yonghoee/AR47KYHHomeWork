@@ -12,7 +12,8 @@
 // 특정대상이 다른 대상을 때린다.
 // 데이터를 변화시켜서 목적을 이룬다.
 
-void StatusRender(
+void StatusRender
+(
     const char* const _Name, // 때리는 족의 이름
     const int& _Att,  // 때리는 쪽의 공격력
     const int& _Hp // 맞는 쪽의 체력
