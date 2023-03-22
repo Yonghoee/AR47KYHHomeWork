@@ -31,7 +31,7 @@ void Damage
     const int& _Att,  // 때리는 쪽의 공격력
 
     int& _AttHp,
-    int& _DefAtt,
+    const int& _DefAtt,
     int& _DefHp
 )
 {
