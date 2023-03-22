@@ -28,8 +28,8 @@ void Damage
 (
     const char* const _AttName, // 때리는 족의 이름
     const char* const _DefName, // 맞는 쪽의 이름
+   
     const int& _Att,  // 때리는 쪽의 공격력
-
     int& _AttHp,
     const int& _DefAtt,
     int& _DefHp
