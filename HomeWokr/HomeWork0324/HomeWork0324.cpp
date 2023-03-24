@@ -39,7 +39,7 @@ int main()
 	const int ScreenYSize = 3;
 	const int ScreenXSize = 3;
 
-	char Arr[ScreenYSize][ScreenXSize] = { 0, };
+	char Arr[ScreenYSize][ScreenXSize] = { 0, 0 };
 
 	for (size_t y = 0; y < ScreenYSize; y++)
 	{
@@ -65,7 +65,7 @@ int main()
 			{
 				printf_s("%c", Arr[y][x]);
 			}
-			for (size_t x = 0; x < ScreenXSize; x++)
+			for (size_t x = 0; x < ScreenXSize; x++)	// 출력후 다시 a로 채워줘서 잔상 제거
 			{
 				Arr[y][x] = 'a';
 			}
@@ -87,9 +87,9 @@ int main()
 
 		// 어떤키를 눌렀는지 알려주는 함수.
 		
-		char Ch0 = _getch();
+		char Ch = _getch();
 
-		switch (Ch0)
+		switch (Ch)
 		{
 		case 'a':
 		case 'A':
