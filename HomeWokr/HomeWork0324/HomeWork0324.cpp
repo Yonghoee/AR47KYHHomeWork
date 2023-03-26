@@ -93,22 +93,34 @@ int main()
 		{
 		case 'a':
 		case 'A':
-			PlayerX -= 1;
+			if (PlayerX != 0)
+			{
+				PlayerX -= 1;
+			}
 			break;
 
 		case'd':
 		case'D':
-			PlayerX += 1;
+			if (PlayerX != ScreenXSize - 1)
+			{
+				PlayerX += 1;
+			}
 			break;
 
 		case's':
 		case'S':
-			PlayerY += 1;
+			if (PlayerY != ScreenYSize - 1)
+			{
+				PlayerY += 1;
+			}
 			break;
 
 		case'w':
 		case'W':
-			PlayerY -= 1;
+			if (PlayerY != 0)
+			{
+				PlayerY -= 1;
+			}
 			break;
 
 		default:
